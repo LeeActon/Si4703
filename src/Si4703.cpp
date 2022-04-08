@@ -15,7 +15,7 @@ Si4703::Si4703(
                 int rstPin,          // = 4,            // Reset Pin
 			          int sdioPin,   // = A4,           // I2C Data IO Pin
 			          int sclkPin,   // = A5,           // I2C Clock Pin
-			          int intPin i,  // = 0,	          // Seek/Tune Complete and RDS interrupt Pin
+			          int intPin,    // = 0,	          // Seek/Tune Complete and RDS interrupt Pin
 
                 // Band Settings
 			          int band,      // = BAND_US_EU,	  // Band Range
