@@ -12,26 +12,26 @@
 //-----------------------------------------------------------------------------------------------------------------------------------
 Si4703::Si4703( 
                 // MCU Pins Selection
-                int rstPin    = 4,            // Reset Pin
-			          int sdioPin   = A4,           // I2C Data IO Pin
-			          int sclkPin   = A5,           // I2C Clock Pin
-			          int intPin    = 0,	          // Seek/Tune Complete and RDS interrupt Pin
+                int rstPin,          // = 4,            // Reset Pin
+			          int sdioPin,   // = A4,           // I2C Data IO Pin
+			          int sclkPin,   // = A5,           // I2C Clock Pin
+			          int intPin i,  // = 0,	          // Seek/Tune Complete and RDS interrupt Pin
 
                 // Band Settings
-			          int band      = BAND_US_EU,	  // Band Range
-                int space     = SPACE_100KHz,	// Band Spacing
-                int de        = DE_75us,		  // De-Emphasis
+			          int band,      // = BAND_US_EU,	  // Band Range
+                int space,           // = SPACE_100KHz,	// Band Spacing
+                int de,              // = DE_75us,		  // De-Emphasis
                 
                 // RDS Settings
 			// TODO:
                 // Tune Settings
 			// TODO:
                 // Seek Settings
-			          int skmode    = SKMODE_STOP,	// Seek Mode
-			          int seekth    = 24,	          // Seek Threshold
-			          int skcnt 	  = SKSNR_MAX,    // Seek Clicks Number Threshold
-			          int sksnr		  = SKCNT_MIN,    // Seek Signal/Noise Ratio
-                int agcd	    = 0				      // AGC disable
+			          int skmode,     // = SKMODE_STOP,	// Seek Mode
+			          int seekth,     // = 24,	          // Seek Threshold
+			          int skcnt,      // = SKSNR_MAX,    // Seek Clicks Number Threshold
+			          int sksnr,      // = SKCNT_MIN,    // Seek Signal/Noise Ratio
+                int agcd              // = 0				      // AGC disable
               )
 {
   // MCU Pins Selection
