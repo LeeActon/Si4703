@@ -140,7 +140,7 @@ class Si4703
 					  int val); 	// values can be GPIO_Z, GPIO_I, GPIO_Low, and GPIO_High
 
 //------------------------------------------------------------------------------------------------------------
-  private:
+  protected:
     // MCU Pins Selection
 	int _rstPin;				// Reset Pin
 	int _sdioPin;				// I2C Data IO Pin
